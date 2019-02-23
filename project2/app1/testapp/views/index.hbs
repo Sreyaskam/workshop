@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<p>Workshop on IOT {{title}}</p>
+
+
+<input type="text" id="recipent">
+
+<button onclick="fn()">Send</button>
+
+<script>
+    function fn(){
+        var email=document.getElementById('recipent').value;
+        window.location.href='http://localhost:8080/mail?recipent='+email;
+        alert('Done');
+            }
+</script>
